@@ -12,6 +12,7 @@
 		5754CDC122F71604009C40D9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5754CDBF22F71604009C40D9 /* Main.storyboard */; };
 		5754CDC322F71605009C40D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5754CDC222F71605009C40D9 /* Assets.xcassets */; };
 		5754CDC622F71605009C40D9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5754CDC422F71605009C40D9 /* LaunchScreen.storyboard */; };
+		5754CDD022F72F38009C40D9 /* TestHello.m in Sources */ = {isa = PBXBuildFile; fileRef = 5754CDCF22F72F38009C40D9 /* TestHello.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		5754CDC222F71605009C40D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5754CDC522F71605009C40D9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5754CDC722F71605009C40D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5754CDCD22F72F38009C40D9 /* TestGitProject-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestGitProject-Bridging-Header.h"; sourceTree = "<group>"; };
+		5754CDCE22F72F38009C40D9 /* TestHello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestHello.h; sourceTree = "<group>"; };
+		5754CDCF22F72F38009C40D9 /* TestHello.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestHello.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,9 @@
 				5754CDC222F71605009C40D9 /* Assets.xcassets */,
 				5754CDC422F71605009C40D9 /* LaunchScreen.storyboard */,
 				5754CDC722F71605009C40D9 /* Info.plist */,
+				5754CDCE22F72F38009C40D9 /* TestHello.h */,
+				5754CDCF22F72F38009C40D9 /* TestHello.m */,
+				5754CDCD22F72F38009C40D9 /* TestGitProject-Bridging-Header.h */,
 			);
 			path = TestGitProject;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					5754CDB722F71604009C40D9 = {
 						CreatedOnToolsVersion = 10.2;
+						LastSwiftMigration = 1020;
 					};
 				};
 			};
@@ -135,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5754CDD022F72F38009C40D9 /* TestHello.m in Sources */,
 				5754CDBE22F71604009C40D9 /* ViewController.swift in Sources */,
 				5754CDBC22F71604009C40D9 /* AppDelegate.swift in Sources */,
 			);
@@ -282,6 +291,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DEESDC93HV;
 				INFOPLIST_FILE = TestGitProject/Info.plist;
@@ -291,6 +301,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.zenit.ZenitOnline.TestGitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestGitProject/TestGitProject-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -300,6 +312,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = DEESDC93HV;
 				INFOPLIST_FILE = TestGitProject/Info.plist;
@@ -309,6 +322,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = ru.zenit.ZenitOnline.TestGitProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestGitProject/TestGitProject-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

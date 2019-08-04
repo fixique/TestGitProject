@@ -12,9 +12,18 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        let hello = Hello()
+        hello.sayHello(name: "Vlad")
     }
 
 
 }
 
+
+class Hello {
+
+    func sayHello(name: String) {
+        print("Hello, \(name)")
+    }
+
+}

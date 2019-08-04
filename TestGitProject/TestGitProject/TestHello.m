@@ -10,4 +10,16 @@
 
 @implementation TestHello
 
+- (void)sayHello:(NSString *)param {
+    NSLog(@"Hello, %@", param);
+}
+
++ (void)some {
+    TestHello *hello = [[TestHello alloc] init];
+    [hello sayHello:@"Vlad"];
+
+}
+
 @end
+
+
