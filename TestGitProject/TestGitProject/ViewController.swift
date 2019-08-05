@@ -14,6 +14,18 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         let hello = Hello()
         hello.sayHello(name: "Vlad")
+
+
+    }
+
+    func showViewController() {
+        let viewController = ViewController()
+        self.present(viewController, animated: true, completion: nil)
+    }
+
+    func pushViewController() {
+        let viewController = ViewController()
+        self.navigationController?.pushViewController(viewController, animated: true)
     }
 
 
